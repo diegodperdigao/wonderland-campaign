@@ -154,6 +154,20 @@
   .week-meta { margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border-soft); display: flex; gap: 8px; flex-wrap: wrap; }
   .meta-pill { font-size: 0.62rem; padding: 5px 12px; background: transparent; border: 1px solid var(--border); border-radius: 20px; color: var(--text-mid); letter-spacing: 0.05em; font-weight: 400; }
   
+  .daily-note {
+    background: rgba(255, 0, 255, 0.04);
+    border: 1px solid rgba(255, 0, 255, 0.2);
+    border-left: 2px solid var(--magenta);
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin-bottom: 16px;
+    font-size: 0.82rem;
+    color: var(--text-mid);
+    line-height: 1.55;
+    font-weight: 300;
+  }
+  .daily-note strong { color: var(--text); font-weight: 500; }
+  
   .daily-calendar { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 36px; }
   .daily-week { margin-bottom: 36px; }
   .daily-week:last-child { margin-bottom: 0; }
@@ -489,7 +503,7 @@
     </div>
     
     <div class="gantt-row">
-      <div class="gantt-label"><div class="name">Live Streams</div><div class="desc">~12 lives por creator</div></div>
+      <div class="gantt-label"><div class="name">Live Streams</div><div class="desc">6 lives por creator</div></div>
       <div class="gantt-track"><div class="gantt-bar phase-2" style="grid-column: 8 / 20;">Creators ao vivo · mín. 15 min/sessão</div></div>
     </div>
     
@@ -534,7 +548,7 @@
       <div class="week-dates">01 — 12 de junho · 12 dias</div>
       <ul class="week-tasks">
         <li><strong>Início das lives</strong> por parte dos creators</li>
-        <li>Média de <strong>~12 lives por creator</strong> (1/dia)</li>
+        <li><strong>6 lives por creator</strong> distribuídas ao longo dos 12 dias</li>
         <li>Duração mínima de <strong>15 minutos</strong> por live</li>
         <li><strong>Extração de conteúdo</strong> em paralelo</li>
         <li>Curadoria diária dos <strong>Highlights</strong></li>
@@ -587,13 +601,13 @@
         <div class="title">Tudo ativo · 01 — 07 jun</div>
       </div>
       <div class="days">
-        <div class="day-cell highlight"><div class="day-header"><div class="day-number">01</div><div class="day-name">Dom</div></div><div class="day-flag">★</div><div class="day-content"><div class="day-task live">Live #1 — Lançamento</div><div class="day-task clip">Clips ao vivo</div><div class="day-task motion">Motion ativo</div></div></div>
-        <div class="day-cell highlight"><div class="day-header"><div class="day-number">02</div><div class="day-name">Seg</div></div><div class="day-content"><div class="day-task live">Live #2</div><div class="day-task clip">Disparo #1</div><div class="day-task motion">Motion ativo</div></div></div>
-        <div class="day-cell highlight"><div class="day-header"><div class="day-number">03</div><div class="day-name">Ter</div></div><div class="day-content"><div class="day-task live">Live #3</div><div class="day-task clip">Disparo #2</div><div class="day-task motion">Motion ativo</div></div></div>
-        <div class="day-cell highlight"><div class="day-header"><div class="day-number">04</div><div class="day-name">Qua</div></div><div class="day-content"><div class="day-task live">Live #4</div><div class="day-task clip">Disparo #3</div><div class="day-task motion">Motion ativo</div></div></div>
-        <div class="day-cell highlight"><div class="day-header"><div class="day-number">05</div><div class="day-name">Qui</div></div><div class="day-content"><div class="day-task live">Live #5</div><div class="day-task clip">Disparo #4</div><div class="day-task motion">Motion ativo</div></div></div>
-        <div class="day-cell highlight"><div class="day-header"><div class="day-number">06</div><div class="day-name">Sex</div></div><div class="day-content"><div class="day-task live">Live #6</div><div class="day-task clip">Disparo #5</div><div class="day-task motion">Motion ativo</div></div></div>
-        <div class="day-cell weekend"><div class="day-header"><div class="day-number">07</div><div class="day-name">Sáb</div></div><div class="day-content"><div class="day-task live">Live #7</div><div class="day-task clip">Disparo #6</div><div class="day-task motion">Motion ativo</div></div></div>
+        <div class="day-cell highlight"><div class="day-header"><div class="day-number">01</div><div class="day-name">Dom</div></div><div class="day-flag">★</div><div class="day-content"><div class="day-task live">Live · Lançamento</div><div class="day-task clip">Clips ao vivo</div><div class="day-task motion">Motion ativo</div></div></div>
+        <div class="day-cell highlight"><div class="day-header"><div class="day-number">02</div><div class="day-name">Seg</div></div><div class="day-content"><div class="day-task live">Live</div><div class="day-task clip">Disparo #1</div><div class="day-task motion">Motion ativo</div></div></div>
+        <div class="day-cell highlight"><div class="day-header"><div class="day-number">03</div><div class="day-name">Ter</div></div><div class="day-content"><div class="day-task live">Live</div><div class="day-task clip">Disparo #2</div><div class="day-task motion">Motion ativo</div></div></div>
+        <div class="day-cell highlight"><div class="day-header"><div class="day-number">04</div><div class="day-name">Qua</div></div><div class="day-content"><div class="day-task live">Live</div><div class="day-task clip">Disparo #3</div><div class="day-task motion">Motion ativo</div></div></div>
+        <div class="day-cell highlight"><div class="day-header"><div class="day-number">05</div><div class="day-name">Qui</div></div><div class="day-content"><div class="day-task live">Live</div><div class="day-task clip">Disparo #4</div><div class="day-task motion">Motion ativo</div></div></div>
+        <div class="day-cell highlight"><div class="day-header"><div class="day-number">06</div><div class="day-name">Sex</div></div><div class="day-content"><div class="day-task live">Live</div><div class="day-task clip">Disparo #5</div><div class="day-task motion">Motion ativo</div></div></div>
+        <div class="day-cell weekend"><div class="day-header"><div class="day-number">07</div><div class="day-name">Sáb</div></div><div class="day-content"><div class="day-task live">Live</div><div class="day-task clip">Disparo #6</div><div class="day-task motion">Motion ativo</div></div></div>
       </div>
     </div>
     
@@ -603,11 +617,11 @@
         <div class="title">Tudo ativo · 08 — 12 jun</div>
       </div>
       <div class="days">
-        <div class="day-cell highlight"><div class="day-header"><div class="day-number">08</div><div class="day-name">Dom</div></div><div class="day-content"><div class="day-task live">Live #8</div><div class="day-task clip">Disparo #7</div><div class="day-task motion">Motion ativo</div></div></div>
-        <div class="day-cell highlight"><div class="day-header"><div class="day-number">09</div><div class="day-name">Seg</div></div><div class="day-content"><div class="day-task live">Live #9</div><div class="day-task clip">Disparo #8</div><div class="day-task motion">Motion ativo</div></div></div>
-        <div class="day-cell highlight"><div class="day-header"><div class="day-number">10</div><div class="day-name">Ter</div></div><div class="day-content"><div class="day-task live">Live #10</div><div class="day-task clip">Disparo #9</div><div class="day-task motion">Motion ativo</div></div></div>
-        <div class="day-cell highlight"><div class="day-header"><div class="day-number">11</div><div class="day-name">Qua</div></div><div class="day-content"><div class="day-task live">Live #11</div><div class="day-task clip">Disparo #10</div><div class="day-task motion">Motion ativo</div></div></div>
-        <div class="day-cell deadline"><div class="day-header"><div class="day-number">12</div><div class="day-name">Sex</div></div><div class="day-flag">END</div><div class="day-content"><div class="day-task live">Live #12</div><div class="day-task clip">Disparo final</div><div class="day-task motion">Motion ativo</div></div></div>
+        <div class="day-cell highlight"><div class="day-header"><div class="day-number">08</div><div class="day-name">Dom</div></div><div class="day-content"><div class="day-task live">Live</div><div class="day-task clip">Disparo #7</div><div class="day-task motion">Motion ativo</div></div></div>
+        <div class="day-cell highlight"><div class="day-header"><div class="day-number">09</div><div class="day-name">Seg</div></div><div class="day-content"><div class="day-task live">Live</div><div class="day-task clip">Disparo #8</div><div class="day-task motion">Motion ativo</div></div></div>
+        <div class="day-cell highlight"><div class="day-header"><div class="day-number">10</div><div class="day-name">Ter</div></div><div class="day-content"><div class="day-task live">Live</div><div class="day-task clip">Disparo #9</div><div class="day-task motion">Motion ativo</div></div></div>
+        <div class="day-cell highlight"><div class="day-header"><div class="day-number">11</div><div class="day-name">Qua</div></div><div class="day-content"><div class="day-task live">Live</div><div class="day-task clip">Disparo #10</div><div class="day-task motion">Motion ativo</div></div></div>
+        <div class="day-cell deadline"><div class="day-header"><div class="day-number">12</div><div class="day-name">Sex</div></div><div class="day-flag">END</div><div class="day-content"><div class="day-task live">Live</div><div class="day-task clip">Disparo final</div><div class="day-task motion">Motion ativo</div></div></div>
         <div class="day-cell weekend" style="opacity:0.35;"><div class="day-header"><div class="day-number">13</div><div class="day-name">Sáb</div></div><div class="day-content"><div class="day-task internal">🇧🇷 Copa</div></div></div>
         <div class="day-cell weekend" style="opacity:0.35;"><div class="day-header"><div class="day-number">14</div><div class="day-name">Dom</div></div><div class="day-content"><div class="day-task internal">—</div></div></div>
       </div>
@@ -722,9 +736,9 @@
       <div class="activation-desc">Do kickoff em 25/mai ao encerramento em 12/jun.</div>
     </div>
     <div class="activation-card">
-      <div class="activation-num">12<small>×creator</small></div>
+      <div class="activation-num">6<small>×creator</small></div>
       <div class="activation-label">Lives por creator</div>
-      <div class="activation-desc">Média de 1 live/dia · mínimo 15 min cada sessão.</div>
+      <div class="activation-desc">Distribuídas ao longo de 12 dias · mínimo 15 min cada sessão.</div>
     </div>
     <div class="activation-card">
       <div class="activation-num">12<small>d</small></div>
